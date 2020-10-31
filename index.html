@@ -1,0 +1,32 @@
+<html> 
+
+<head> 
+<title>
+  Sales Forecasting
+</title> 
+
+</head>
+
+<body> 
+<br> 
+<br> 
+<form action="{{url_for('predict')}}" method="post">
+
+<input type="text" name="rate" required="required">
+<input type="text" name="sales in first month" required="required">
+<input type="text" name="sales in second month" required="required">
+<br>
+<br>
+<br>
+<br>
+<button type="submit"> Predict sales in third month</button>
+</form>
+<br> 
+<br> 
+{{prediction_text}}
+
+</body>
+
+
+
+</html>
